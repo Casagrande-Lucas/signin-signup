@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="utf-8"> <!-- Formatação da escrita para aceitar acentos e letras BR -->
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.css"> <!-- Importando CSS do bootstrap -->
-        <script src="bootstrap/js/bootstrap.js" type="text/javascript"></script> <!-- Importando JS do bootstrap -->
-        <link rel="icon" href="#"> <!-- Favicon do site -->
-        <title>Warehouse PHP</title> <!-- Titulo do site -->
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
+        <link rel="icon" href="#">
+        <title>Warehouse PHP</title>
     </head>
     <body>
         <mai>
