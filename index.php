@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -15,14 +19,14 @@
                 
                 <div class="dropdown-divider"></div>
 
-                <form action="#" method="POST">
+                <form action="login-post.php" method="POST">
                     <div class="col-sm form-group">
                         <label>Username</label>
                         <input type="text" name="username" class="form-control" placeholder="Username" required>
                     </div>
                     <div class="col-sm form-group">
                         <label>Password</label>
-                        <input type="password" name="password" class="form-control" placeholder="password" required>
+                        <input type="password" name="user_password" class="form-control" placeholder="password" required>
                     </div>
 
                     <div class="pt-2">
