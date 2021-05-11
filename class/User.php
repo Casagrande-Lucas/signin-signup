@@ -12,6 +12,7 @@ class User
     {
         if($id_user) {
             $this->id_user = $id_user;
+            $this->uploadUser();
         }
     }
 
@@ -35,6 +36,20 @@ class User
             return true;
         } else {
             return false;
+        }
+    }
+
+    public function uploadUser()
+    {
+        $query = "SELECT * FROM users WHERE id_user = '$this->id_user'";
+        $connection = Connection::getConnection();
+        $resut = $connection->query($query);
+        $list = $resut->fetchAll();
+        foreach ($list as $line) {
+            $this->username = $line['username'];
+            $this->password = $line['user_password'];
+            $this->first_name = $line['first_name'];
+            $this->last_name = $line['last_name'];
         }
     }
 }
