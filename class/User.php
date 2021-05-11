@@ -2,5 +2,39 @@
 
 class User
 {
+    public $id_user;
+    public $username;
+    public $password;
+    public $first_name;
+    public $last_name;
 
+    public function __construct($id_user = false)
+    {
+        if($id_user) {
+            $this->id_user = $id_user;
+        }
+    }
+
+    public function login($username, $password)
+    {
+        $connection = Connection::getConnection();
+        $query = "SELECT * FROM users WHERE username = '{$username}' AND user_password = md5('{$password}')";
+        $query = $connection->prepare($query);
+        $query->bindValue("username", $username);
+        $query->bindValue("user_password", md5($password));
+        $query->execute();
+
+        if($query->rowCount() > 0) {
+            $data = $query->fetch();
+
+            $_SESSION['id_user'] = $data['id_user'];
+            $_SESSION['username'] = $data['username'];
+            $_SESSION['password'] = $data['password'];
+            $_SESSION['first_name'] = $data['first_name'];
+            $_SESSION['last_name'] = $data['last_name'];
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
