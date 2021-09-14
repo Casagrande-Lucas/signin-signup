@@ -29,12 +29,12 @@ $fullName = $first_name . ' ' . $last_name;
                     </div>
                     <div class="dropdown">
                         <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="img/profile_picture.png" alt="Profile Picture">
+                            <img src="img/icons/account_circle_18dp.png" alt="Profile Picture">
                             <?php echo $fullName ?>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Edit User</a></li>
-                            <li><a class="dropdown-item" href="#">Change Password</a></li>
+                            <!--li><a class="dropdown-item" href="#">Edit User</a></li>
+                            <li><a class="dropdown-item" href="#">Change Password</a></li-->
                             <hr class="dropdown-divider">
                             <li><a class="dropdown-item bg-danger" href="logout.php">Log Out</a></li>
                         </ul>

@@ -17,34 +17,35 @@ session_start();
                 <img src="img/CompanyLogo1.png" class="w-100 m-sm-1" alt="Company Logo">
                 <div class="dropdown-divider"></div>
 
-                <?php if(isset($_SESSION['errorLogin'])): ?>
-                    <div class="border border-danger text-center rounded" h4 class="text-danger text-center">
-                        <h4 class="text-danger">Incorrect username or password!</h4>
-                    </div>
-                <?php endif; unset($_SESSION['errorLogin']); ?>
-
                 <div class="text-center">
-                    <h4>Sign In</h4>
+                    <h4>Sign Up</h4>
                 </div>
 
-                <form class="px-4 py-3" action="signin-post.php" method="POST">
+                <form class="px-4 py-3" action="#" method="POST">
                     <div  class="col-sm-9 form-group">
-                        <label>Username</label>
-                        <input type="text" class="form-control" name="username" placeholder="Your Username" required>
+                        <label>Enter your Username</label>
+                        <input type="text" class="form-control" name="username" placeholder="Enter your Username" required>
                     </div>
                     <div  class="col-sm-9 form-group">
-                        <label>Password</label>
+                        <label>Enter your Password</label>
                         <input type="password" class="form-control" name="password" placeholder="Enter Your Password" required>
                     </div>
+                    <div  class="col-sm-9 form-group">
+                        <label>Fisrt Name</label>
+                        <input type="text" class="form-control" name="first_name" placeholder="Enter your first name" required>
+                    </div>
+                    <div  class="col-sm-9 form-group">
+                        <label>Last Name</label>
+                        <input type="text" class="form-control" name="last_name" placeholder="Enter your last name" required>
+                    </div>
                     <div>
-                        <button type="submit" class="col-4 mt-3 btn btn-success">Sign In</button>
+                        <button type="submit" class="col-5 mt-3 btn btn-success">Create account</button>
                     </div>
                 </form>
 
                 <div class="dropdown-divider"></div>
 
-                <a class="text-danger ml-3" href="#">Forgot password?</a>
-                <h6>New to System ERP? <a class="text-success ml-3" href="signup.php">Create an account.</a></h6>
+                <h6>Already have an account? <a class="text-success ml-3" href="index.php">Sign In.</a></h6>
             </div>
 
             <footer class="card-footer fixed-bottom bg-dark border-top border-danger text-light">
