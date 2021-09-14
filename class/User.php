@@ -12,14 +12,14 @@ class User
     {
         if($id_user) {
             $this->id_user = $id_user;
-            $this->uploadUser();
+            $this->loadUser();
         }
     }
 
-    public function login($username, $user_password)
+    public function signin($username, $user_password)
     {
         $connection = Connection::getConnection();
-        $query = "SELECT * FROM db_warehouse.users WHERE username = '{$username}' AND user_password = md5('{$user_password}')";
+        $query = "SELECT * FROM erp.users WHERE username = '{$username}' AND user_password = md5('{$user_password}')";
         $query = $connection->prepare($query);
         $query->bindValue("username", $username);
         $query->bindValue("user_password", md5($user_password));
@@ -39,9 +39,9 @@ class User
         }
     }
 
-    public function uploadUser()
+    public function loadUser()
     {
-        $query = "SELECT * FROM db_warehouse.users WHERE id_user = '$this->id_user'";
+        $query = "SELECT * FROM erp.users WHERE id_user = '$this->id_user'";
         $connection = Connection::getConnection();
         $resut = $connection->query($query);
         $list = $resut->fetchAll();
