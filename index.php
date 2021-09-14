@@ -23,14 +23,14 @@ session_start();
                     </div>
                 <?php endif; unset($_SESSION['errorLogin']); ?>
 
-                <form class="px-4 py-3" action="login-post.php" method="POST">
+                <form class="px-4 py-3" action="signin.php" method="POST">
                     <div  class="col-sm-9 form-group">
                         <label>Username</label>
                         <input type="text" class="form-control" name="username" placeholder="Your Username" required>
                     </div>
                     <div  class="col-sm-9 form-group">
                         <label>Password</label>
-                        <input type="password" class="form-control" name="user_password" placeholder="Enter Your Password" required>
+                        <input type="password" class="form-control" name="password" placeholder="Enter Your Password" required>
                     </div>
                     <div>
                         <button type="submit" class="col-4 mt-3 btn btn-success">Log In</button>
