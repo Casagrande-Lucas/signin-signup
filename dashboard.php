@@ -1,5 +1,5 @@
 <?php
-require_once 'header.php';
+    require_once 'header.php';
 ?>
 
     <div class="text-center border border-dark m-1 rounded">
@@ -7,5 +7,5 @@ require_once 'header.php';
     </div>
     
 <?php
-require_once 'footer.php';
+    require_once 'footer.php';
 ?>
