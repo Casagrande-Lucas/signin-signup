@@ -1,6 +1,6 @@
 # What's up bro!! 
 
-### 📋 Project: Enterprise Resource Planning System
+### 📋 Project: Sing In and Sing Up
 
 - 💡🛠️ Technologies: Apache2, PHP 8.0, MySQL 8.0, Bootstrap, HTML, CSS, JavaScript.
 
@@ -9,7 +9,7 @@
 ##
 
 ## 🎯 About Project
-The project's objective is to create an open source system where small and large companies have access to a quality ERP system supported by an active community. 
+The project aims to show the concepts of "Sign In" and "Sign Up" and how to work with some security issues like SQL injection attacks. 
 
 ##
 
