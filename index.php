@@ -34,7 +34,7 @@ session_start();
                     </div>
                     <div  class="col-sm-9 form-group">
                         <label>Password</label>
-                        <input type="password" class="form-control" name="password" placeholder="Enter Your Password" required>
+                        <input type="password" class="form-control" name="password_user" placeholder="Enter Your Password" required>
                     </div>
                     <div>
                         <button type="submit" class="col-4 mt-3 btn btn-success">Sign In</button>

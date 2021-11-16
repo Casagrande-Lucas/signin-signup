@@ -1,15 +1,15 @@
 <?php
 session_start();
 try {
-    if (isset($_POST['username']) && !empty($_POST['username']) && isset($_POST['password']) && !empty($_POST['password'])) {
+    if (isset($_POST['username']) && !empty($_POST['username']) && isset($_POST['password_user']) && !empty($_POST['password_user'])) {
 
         require_once 'global.php';
 
         $username = addslashes($_POST['username']);
-        $password = addslashes($_POST['password']);
+        $password_user = addslashes($_POST['password_user']);
 
         $user = new User();
-        if ($user->signin($username, $password) === true) {
+        if ($user->signin($username, $password_user) === true) {
             if (isset($_SESSION['id_user'])) {
                 header('Location: dashboard.php');
             }else {
