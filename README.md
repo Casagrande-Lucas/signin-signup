@@ -1,6 +1,6 @@
 # What's up bro!! 
 
-### 📋 Project: Sing In and Sing Up
+### 📋 Project: Sign In and Sign Up
 
 - 💡🛠️ Technologies: Apache2, PHP 8.0, MySQL 8.0, Bootstrap, HTML, CSS, JavaScript.
 
