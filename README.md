@@ -26,10 +26,13 @@ The project aims to show the concepts of "Sign In" and "Sign Up" and how to work
 - Sign Up ⭕
 
 ## Sing In
-![signin](https://user-images.githubusercontent.com/83429137/133451816-bbd806f6-e27a-4ff6-a590-3142b14288d3.png)
-
-## Dashboard
-![dashboard](https://user-images.githubusercontent.com/83429137/133451994-86e3e127-c8a5-4e2f-a609-aacd0f750a29.png)
+![singin](https://user-images.githubusercontent.com/83429137/142077394-979b95a5-c8ae-4eed-95e7-ccede02bb468.png)
 
 ## Sing Up
-![signup](https://user-images.githubusercontent.com/83429137/133452083-c6953abe-052a-4349-8c62-a6f7e869e939.png)
+![singup](https://user-images.githubusercontent.com/83429137/142077571-8e2ee23c-f6c7-4a02-9a99-5fa898728c8c.png)
+
+## Error Sign In
+![errorsingin](https://user-images.githubusercontent.com/83429137/142077495-d14e89a6-6f60-492e-b1e2-a3a885cb45c5.png)
+
+## Dashboard
+![dashboard](https://user-images.githubusercontent.com/83429137/142077525-67b48d99-99aa-4467-9fc1-6c31b9c1e994.png)
