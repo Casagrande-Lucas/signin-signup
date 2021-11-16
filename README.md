@@ -36,3 +36,21 @@ The project aims to show the concepts of "Sign In" and "Sign Up" and how to work
 
 ## Dashboard
 ![dashboard](https://user-images.githubusercontent.com/83429137/142077525-67b48d99-99aa-4467-9fc1-6c31b9c1e994.png)
+
+## Run
+> 1 - Clone project
+```terminal
+$ git clone https://github.com/Casagrande-Lucas/singin-singup.git
+```
+> 2 - Import file .sql
+```terminal
+$ mysql -u root -p <Name DataBase> < <Path-Project/erp.sql>  
+```
+> 3 - Enable localhost access
+```terminal
+$ php -S localhost:8080  
+```
+> 4 - Access your browser
+```browser
+http://localhost:8080
+```
